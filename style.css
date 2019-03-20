@@ -1,0 +1,509 @@
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("fonts/ProximaNova-Light.woff2") format("woff2"), url("fonts/ProximaNova-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("fonts/ProximaNova-Regular.woff2") format("woff2"), url("fonts/ProximaNova-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("fonts/ProximaNova-Semibold.woff2") format("woff2"), url("fonts/ProximaNova-Semibold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("fonts/ProximaNova-Bold.woff2") format("woff2"), url("fonts/ProximaNova-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("fonts/ProximaNova-Extrabld.woff2") format("woff2"), url("fonts/ProximaNova-Extrabld.woff") format("woff");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("fonts/ProximaNova-Black.woff2") format("woff2"), url("fonts/ProximaNova-Black.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+* {
+  vertical-align: baseline;
+  font-weight: inherit;
+  font-family: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  border: 0 none;
+  outline: 0;
+  padding: 0;
+  margin: 0;
+}
+
+.header-block {
+  background: url("img/bghead.png") 0 20px;
+}
+
+.header-block__content {
+  width: 1200px;
+  height: 984px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-block__left {
+  margin-top: 43px;
+}
+
+.header-block__logo {
+  /*position: relative;*/
+  margin-left: 74px;
+}
+
+.header-block__logo-comment {
+  position: relative;
+  font-family: "Proxima Nova";
+  font-size: 8pt;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #66af45;
+  /*line-height: 0.95;*/
+  width: 134px;
+  top: -67px;
+  left: 288px;
+}
+
+.header-block__time-date {
+  color: #66af45;
+  font-family: "Proxima Nova";
+  text-align: left;
+  font-weight: 0;
+  margin-bottom: 20px;
+  margin-left: 74px;
+}
+
+.header-block__date {
+  line-height: 90%;
+  font-size: 62pt;
+  margin-left: -10px;
+  font-family: "Proxima Nova";
+  font-weight: 700;
+}
+
+.header-block__month {
+  position: relative;
+  top: 2px;
+  vertical-align: top;
+  text-transform: uppercase;
+  font-size: 20pt;
+  font-family: "Proxima Nova";
+  font-weight: 800;
+}
+
+.header-block__begin-time {
+  vertical-align: bottom;
+  position: relative;
+  font-size: 20pt;
+  font-weight: 400;
+  left: -114px;
+  bottom: 10px;
+}
+
+.header-block__benefits {
+  color: #66af45;
+  font-family: "Proxima Nova";
+  font-weight: bold;
+  width: 235px;
+  margin-left: 74px;
+  margin-bottom: 45px;
+  font-size: 12pt;
+  text-transform: uppercase;
+}
+
+.header-block__header-main {
+  color: #542749;
+  font-size: 82pt;
+  font-family: "Proxima Nova";
+  font-weight: 800;
+  width: 455px;
+  text-transform: uppercase;
+  line-height: 0.86;
+  letter-spacing: 4px;
+}
+
+.header-block__slogan {
+  width: 356px;
+  font-family: "Proxima Nova";
+  font-weight: 700;
+  font-size: 31pt;
+  text-transform: uppercase;
+  color: #542749;
+  letter-spacing: 5px;
+}
+
+.header-block__play-button {
+  width: 118px;
+  height: 118px;
+  background: #542749;
+  border-radius: 50%;
+  margin-left: 74px;
+  margin-top: 28px;
+  position: relative;
+  cursor: pointer;
+}
+
+.header-block__play-button:before {
+  content: "";
+  background: url("img/play.png") no-repeat;
+  position: absolute;
+  height: 50%;
+  width: 500%;
+  top: 30px;
+  left: 35%;
+  /*cursor: pointer;*/
+}
+
+.header-block__right {
+  margin-top: 43px;
+}
+
+.header-block__contacts {
+  padding-left: 40px;
+  margin-bottom: 36px;
+}
+
+.header-block__contact-item {
+  color: #66af45;
+  font-family: "Proxima Nova";
+  font-weight: 600;
+  font-size: 14pt;
+  text-decoration: none;
+}
+
+.header-block__contact-item--phone-number {
+  position: relative;
+  margin-right: 64px;
+}
+.header-block__contact-item--phone-number:before {
+  content: "";
+  background: url("img/phone.png") no-repeat;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  margin-left: -20px;
+  top: 2px;
+}
+
+.header-block__contact-item--email-link {
+  position: relative;
+  text-decoration: underline;
+}
+.header-block__contact-item--email-link:before {
+  content: "";
+  background: url("img/env.png") no-repeat;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  margin-left: -20px;
+  top: 6px;
+}
+
+.header-block__contact-item--address {
+  position: relative;
+  margin-top: 34px;
+  display: inline-block;
+  line-height: 150%;
+  /*font-weight: normal;*/
+  font-family: "Proxima Nova";
+  font-weight: 400;
+  font-size: 80%;
+}
+.header-block__contact-item--address:before {
+  content: "";
+  background: url("img/metro.png") no-repeat;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  margin-left: -20px;
+  top: 3px;
+}
+
+.header-block__contact-item--address-station {
+  color: #542749;
+  font-family: "Proxima Nova";
+  font-weight: 700;
+  font-size: 12pt;
+}
+
+.header-block_social-text {
+  color: #426176;
+  font-family: "Proxima Nova";
+  font-weight: 400;
+  font-size: 10pt;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: -5px;
+}
+
+.header-block_social-links {
+  text-align: center;
+  margin: 8px auto;
+}
+
+.header-block_social-link {
+  display: inline-block;
+  margin-right: 8px;
+}
+.header-block_social-link:hover {
+  opacity: 0.8;
+}
+
+.registration-form {
+  width: 435px;
+  height: 646px;
+  background: rgba(157, 171, 183, 0.7);
+}
+
+.registration-form__content {
+  padding: 54px 52px 0 52px;
+}
+
+.registration-form__header {
+  font-family: Proxima Nova;
+  font-weight: 500;
+  font-size: 30pt;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 0.6em;
+  margin-bottom: 15px;
+}
+
+.registration-form__header-small {
+  font-size: 50%;
+  /*font-weight: 500;*/
+  text-transform: lowercase;
+}
+
+.registration-form__form {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.registration-form__input {
+  background: rgba(235, 238, 240, 0.9);
+  padding: 0 0 0 21px;
+  width: 295px;
+  height: 60px;
+  margin-top: 17px;
+  color: #638194;
+  font-family: Proxima Nova;
+}
+.registration-form__input::placeholder {
+  color: #90a9ba;
+}
+
+.registration-form__bottom {
+  color: #fff;
+  font-family: Proxima Nova;
+  font-size: 10pt;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 16px 0 0 0;
+  padding-bottom: 44px;
+}
+
+/*.radio-button__input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}*/
+.radio-button__input {
+  position: absolute;
+  /*width: 148px;*/
+  /*height: 30px;*/
+  /*white-space: nowrap;
+  z-index: 1;*/
+  opacity: 0;
+  /*margin: 10px 0 0 7px;*/
+}
+
+/*.radio-button__input + label {
+  position: relative;
+  padding: 0 0 0 35px;
+  cursor: pointer;
+}*/
+.radio-button__form {
+  display: flex;
+  margin: 25px auto 40px auto;
+  justify-content: space-between;
+  width: 302px;
+  height: 40px;
+  padding: 3px;
+  border: 1px solid #fff;
+  border-radius: 25px;
+  text-align: left;
+}
+
+.radio-button__label {
+  position: relative;
+  padding-top: 10px;
+  width: 148px;
+  height: 30px;
+  border-radius: 21px;
+  padding-left: 63px;
+  font-family: Proxima Nova;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 12px;
+  color: #fff;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.radio-buttons input:checked + .radio-button__label {
+  background: #fff no-repeat 12px center;
+  color: #839fb1;
+}
+.radio-buttons input:focus + .radio-button__label {
+  box-shadow: inset 0 0 3px 0 #839fb1;
+}
+.radio-buttons input[id^=life]:checked + .radio-button__label:after {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  content: "";
+  width: 34px;
+  height: 23px;
+  background: url("img/hat.png") -204px -161px;
+}
+.radio-buttons input[id^=online]:checked + .radio-button__label:after {
+  position: absolute;
+  top: 9px;
+  left: 17px;
+  content: "";
+  width: 29px;
+  height: 23px;
+  background: url("img/smallplay.png") -196px -146px;
+}
+
+.check-box__form {
+  width: 254px;
+  margin: 0 auto;
+  /*text-align: center;*/
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.check-box__label {
+  font-family: Proxima Nova;
+  font-weight: 300;
+  color: #fff;
+  font-size: 8pt;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.check-box__check-box {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+  margin: 10px 0 0 20px;
+}
+
+.check-box__check-box + label {
+  position: relative;
+  padding: 0 0 0 46px;
+  cursor: pointer;
+}
+
+.check-box__check-box + label:before {
+  content: "";
+  position: absolute;
+  top: -4px;
+  left: 0;
+  width: 28px;
+  height: 28px;
+  /*border-radius: 13px;*/
+  /*background: #fff;*/
+  /*box-shadow: inset 0 2px 3px rgba(0,0,0,.2);*/
+  border: 1px #fff solid;
+  transition: 0.2s;
+  /*z-index: -1;*/
+}
+
+.check-box__check-box + label:after {
+  content: "";
+  position: absolute;
+  top: -1px;
+  left: 3px;
+  width: 24px;
+  height: 24px;
+  /*border-radius: 10px;*/
+  background: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  transition: 0.2s;
+}
+
+.check-box__check-box:checked + label:before {
+  /*background: #9FD468;*/
+  z-index: 2;
+}
+
+.check-box__check-box:checked + label:after {
+  /*left: 26px;*/
+  position: absolute;
+  background: #fff;
+  background-image: url("img/checkmark1.png");
+  /*z-index: 6;*/
+}
+
+.check-box__check-box:focus + label:after {
+  box-shadow: inset 0 0 3px 0 #839fb1;
+  /*z-index: 1;*/
+}
+
+.reg-form__button {
+  width: 321px;
+  height: 64px;
+  background: #542749;
+  color: #fff;
+  font-family: Proxima Nova;
+  font-size: 12pt;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 26px auto;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+.reg-form__button:hover {
+  background: #66b045;
+}
+
+/*# sourceMappingURL=style.css.map */

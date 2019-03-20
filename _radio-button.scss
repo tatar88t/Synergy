@@ -1,0 +1,83 @@
+/*.radio-button__input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}*/
+.radio-button__input {
+  position: absolute;
+   /*width: 148px;*/
+  /*height: 30px;*/
+  /*white-space: nowrap;
+  z-index: 1;*/
+  opacity: 0;
+  /*margin: 10px 0 0 7px;*/
+}
+/*.radio-button__input + label {
+  position: relative;
+  padding: 0 0 0 35px;
+  cursor: pointer;
+}*/
+.radio-button__form{
+  display: flex;
+  margin: 25px auto 40px auto;
+  justify-content: space-between;
+  width: 302px;
+  height: 40px;
+  padding: 3px;
+  border: 1px solid #fff;
+  border-radius: 25px;
+  text-align: left;
+}
+
+.radio-button__label {
+  position: relative;
+  padding-top: 10px;
+  width: 148px;
+  height: 30px;
+  border-radius: 21px;
+  padding-left: 63px;
+  font-family: Proxima Nova;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 12px;
+  color: #fff;
+  text-transform: uppercase;
+  cursor: pointer;
+
+  .radio-buttons input:checked + & {
+    background: #fff no-repeat 12px center;
+    color: #839fb1;
+  }
+
+  .radio-buttons input:focus + & {
+    box-shadow:  inset  0 0 3px 0 #839fb1;
+  }
+
+  .radio-buttons input[id^="life"]:checked + &:after {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    content: "";
+    width: 34px;
+    height: 23px;
+    background: url('img/hat.png') -204px -161px;
+  }
+
+  .radio-buttons input[id^="online"]:checked + &:after {
+    position: absolute;
+    top: 09px;
+    left: 17px;
+    content: "";
+    width: 29px;
+    height: 23px;
+    background: url("img/smallplay.png") -196px -146px;
+  }
+}

@@ -1,0 +1,17 @@
+.reg-form__button{
+	width: 321px;
+	height: 64px;
+	background: #542749;
+	color: #fff;
+	font-family: Proxima Nova;
+	font-size: 12pt;
+	font-weight: 600;
+	text-transform: uppercase;
+	text-align: center;
+	padding: 26px auto;
+	letter-spacing: 1px;
+	cursor: pointer;
+	&:hover{
+		background: #66b045;
+	};
+}

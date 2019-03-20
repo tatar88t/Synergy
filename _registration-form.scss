@@ -1,0 +1,54 @@
+.registration-form {
+	width:435px;
+	height: 646px;
+	background: rgba(157,171,183, 0.7);
+}
+.registration-form__content {
+	padding: 54px 52px 0 52px;
+	
+}
+.registration-form__header {
+	font-family: Proxima Nova;
+	font-weight: 500;
+	font-size: 30pt;
+	color: #fff;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	margin: 0 auto;
+	text-align: center;
+	line-height: .60em; 
+	margin-bottom: 15px;
+}
+.registration-form__header-small{
+	font-size: 50%;
+	/*font-weight: 500;*/
+	text-transform: lowercase;
+}
+.registration-form__form{
+	margin: 0 auto;
+	text-align: center;
+
+}
+.registration-form__input{
+	background: rgba(235,238,240, 0.9);
+	padding: 0 0 0 21px;
+	width: 295px;
+	height: 60px;
+	margin-top: 17px;
+	color: #638194;
+	font-family: Proxima Nova;
+	&::placeholder{
+		color: #90a9ba;
+	}
+		
+}
+.registration-form__bottom{
+	color: #fff;
+	font-family: Proxima Nova;
+	font-size: 10pt;
+	font-weight: 400;
+	text-transform: uppercase;
+	text-align: center;
+	margin: 16px 0 0 0;
+	padding-bottom: 44px;
+}
